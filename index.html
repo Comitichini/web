@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style_PandaHub.css"/>
+  <script src="Script_PandaHub.js"></script>
+  <title>Panda Hub</title>
+  <link rel="icon" href="favicon.ico"/>
+
+
+</head>
+<header>
+  <section class="head-menu">
+    <!--Composed with:
+      Website LOGO on the left
+        /-> return on main page
+      Navigation bar:
+        MY ACCOUNT  (left-aligned)
+          /-> goes on /profiles/manage page
+        ACTIVITIES  (left-aligned)
+          /-> goes on /activities page
+        CREATE NEW  (left-aligned)
+          /-> goes on activities/new page
+        Shop        (left-aligned)
+          /-> goes on /shopping page
+        SUBSCRIBE   (right-aligned)
+        LOGIN       (right-aligned)
+    -->
+
+    <div class="head-left">
+      <img id="logo" src="../Images/Logos/Logo-square (3).jpg" alt="PandaHub Official Logo"/>
+    </div>
+
+    <div class="head-right">
+
+      <div class="head-top">
+        <img id="headPanda" src="../Images/Mascots/Panda_Looking (1).png" alt="PandaHub Official Avatar"/>
+      </div>
+
+      <div class="head-navbar">
+
+        <!--left side Menu-->
+        <div class="navbar-left">
+          <div class="menu-item">
+            <img class="menu-icon avatar" src="../Images/Icons/Avatar.png" alt="MY ACCOUNT"/>
+            <a href="../Codes/index.html">MY ACCOUNT</a>
+          </div>
+
+          <div class="navbar-sep"></div>
+
+          <div class="menu-item">
+            <img class="menu-icon" src="../Images/Icons/MagnifyingGlass.png" alt="ACTIVITIES"/>
+            <a href="#">ACTIVITIES</a>
+          </div>
+
+          <div class="navbar-sep"></div>
+
+          <div class="menu-item">
+            <img class="menu-icon" src="../Images/Icons/Map.png" alt="CREATE NEW"/>
+            <a href="#">CREATE NEW</a>
+          </div>
+
+          <div class="navbar-sep"></div>
+
+          <div class="menu-item">
+            <img class="menu-icon" src="../Images/Icons/Cart.png" alt="SHOP"/>
+            <a href="../PagePub/pub.html">SHOP</a>
+          </div>
+        </div>
+
+        <!--right side Menu-->
+        <div class="navbar-right">
+
+          <div class="menu-item">
+            <img class="menu-icon" src="../Images/Icons/language.svg" alt="Language Translate"/>
+          </div>
+
+          <div class="navbar-sep"></div>
+
+          <div class="menu-item">
+            <a href="#">Subscribe</a>
+          </div>
+
+          <div class="navbar-sep"></div>
+
+          <div class="menu-item">
+            <a href="#">Login</a>
+          </div>
+
+          <div class="navbar-sep"></div>
+
+          <div class="menu-item">
+            <a href="#">...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+<body>
+  <section class="section1">
+    <img class="backgroundCollection" src="../Images/Backgrounds/Wallpaper (1).jpg" onclick="autoChange_Backgrounds()"/>
+    <audio autoplay loop>
+      <source src="../musique/Kokia.mp3" type="audio/mp3">    
+    </audio>
+
+  </section>
+  <!--div class="useless">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis enim in mauris imperdiet hendrerit ac quis tortor. Aliquam commodo sit amet augue at congue. Vivamus imperdiet faucibus nisl vel eleifend. Sed vehicula facilisis neque at volutpat. Sed eget felis ac tortor mattis lacinia vitae hendrerit metus. Quisque porttitor dictum libero. Aliquam ac odio volutpat, ultricies neque sed, sodales nulla. Aenean egestas turpis magna, sit amet tempor lacus lobortis vel. Suspendisse commodo orci at feugiat volutpat. Nam a placerat lacus. Aenean congue bibendum dolor vel eleifend. Cras at tortor volutpat, aliquet urna in, posuere nulla.</p>
+    <p>Praesent non sem mi. Donec vestibulum sapien consectetur libero volutpat, iaculis hendrerit mi vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum fringilla libero eu mattis. Mauris posuere nulla aliquet justo molestie, id auctor elit placerat. Nunc cursus varius consectetur. Donec feugiat ex nulla, non dignissim enim feugiat sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum vel auctor ante, ut venenatis lorem. Ut nulla metus, imperdiet vitae cursus sed, ornare vitae sem. Integer a mauris mauris. Nam scelerisque elementum sem id rhoncus. Nulla vitae risus hendrerit, efficitur dolor a, malesuada nunc. Duis dapibus placerat diam, ac egestas felis ultricies fermentum. Proin arcu eros, iaculis at aliquam sit amet, pharetra ut massa. Nullam at dapibus libero.</p>
+    <p>Cras egestas tincidunt suscipit. Cras efficitur tempor risus, eget mattis tellus. Duis laoreet congue faucibus. Donec vulputate, lacus eu aliquam facilisis, dui sapien elementum velit, vitae eleifend massa odio ut mauris. Aenean placerat tristique turpis vel posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas facilisis enim eu magna iaculis maximus vitae at tortor. Nulla dapibus, tortor tempus convallis viverra, tortor erat sodales nisi, elementum scelerisque elit neque sit amet ex. Morbi quis suscipit erat. Integer eget purus sit amet dui aliquet commodo.</p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tempor augue sed orci dapibus, eget gravida arcu vehicula. Sed molestie sed justo eu ullamcorper. Duis at enim vel orci rutrum malesuada. Aliquam vitae leo varius, sodales ligula in, bibendum odio. Sed congue suscipit pellentesque. Aenean congue justo et scelerisque mollis. Phasellus at commodo urna, sit amet pharetra odio. Aliquam cursus molestie quam, sed tempus nunc mollis ut. Suspendisse finibus efficitur aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse diam diam, dictum sit amet interdum vitae, euismod ac mi. Maecenas id leo ut odio sagittis aliquet nec a lorem. Nulla fermentum orci ultrices augue lobortis pulvinar.</p>
+    <p>Maecenas quis lectus eu orci condimentum dapibus id at erat. Sed accumsan dui et sapien dapibus posuere. Nunc non ultricies elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque at lacus nisi. Morbi sed dapibus turpis, a scelerisque ex. Vestibulum ac metus libero. Donec tincidunt odio accumsan, sollicitudin est non, molestie felis. Nam sodales hendrerit nibh, ut fermentum dolor fringilla eget. Phasellus vestibulum sem sed gravida lacinia. Phasellus posuere iaculis magna, id hendrerit tellus mollis in. Proin accumsan, nunc eget tincidunt varius, elit odio blandit ligula, vitae malesuada ligula neque sed quam. Nulla vel mauris ultricies, rutrum nulla vitae, lobortis lorem. Nam sed justo non dui dignissim tempus nec ut felis. Nam et molestie magna, non vehicula libero.</p>
+    <p>Ut sit amet porta diam, vitae accumsan dolor. Maecenas suscipit interdum enim, dapibus ornare turpis hendrerit congue. Praesent vitae enim accumsan quam condimentum scelerisque id a odio. Nam eget risus a dolor dapibus efficitur vel sed lorem. Cras ac magna sed tortor convallis faucibus in venenatis purus. Cras venenatis laoreet sapien, eu interdum mi venenatis ut. Aliquam ut neque egestas, aliquet nisi ac, varius ipsum. Integer condimentum scelerisque nisi condimentum ullamcorper. Phasellus vel sodales lectus, non pulvinar purus. Sed ut risus quis metus sollicitudin sagittis in sit amet tortor. Nullam scelerisque egestas sapien in sodales. Aenean sagittis metus massa, sed consectetur orci venenatis fringilla. Donec eu euismod libero.</p>
+    <p>Cras suscipit tortor arcu, at eleifend eros laoreet sed. Nam eu mauris sit amet ex finibus rhoncus. In imperdiet porttitor elit at vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut vestibulum accumsan odio, at sollicitudin urna. Sed convallis, eros eget pulvinar posuere, magna justo venenatis tellus, quis maximus leo orci nec sem. Vestibulum consequat consectetur ipsum et luctus. Fusce iaculis semper facilisis. Suspendisse sagittis ipsum sed nibh placerat, vitae rhoncus turpis rutrum. Curabitur eu massa tempor, dapibus eros at, laoreet turpis. Integer viverra lacus et quam accumsan, ut lobortis sapien posuere. Maecenas eget sodales massa.</p>
+    <p>Proin aliquam laoreet laoreet. Aenean id ipsum neque. Morbi faucibus consectetur dapibus. In maximus aliquet neque ut condimentum. Curabitur ornare nunc eget dui lacinia, id aliquam ligula vestibulum. Aliquam fermentum feugiat nisi rutrum lacinia. Duis sagittis enim ac lectus fringilla, sed pretium nulla pellentesque. Donec congue, nisi vel scelerisque condimentum, orci dui tempus lacus, sit amet eleifend velit tortor vitae purus. Suspendisse pharetra ligula non orci viverra, et convallis lorem feugiat.</p>
+    <p>Donec mattis eu nibh vel accumsan. Quisque non nunc nec mi euismod bibendum. Cras ut eros lorem. Duis accumsan mi scelerisque enim dignissim molestie. Ut a nulla pellentesque magna semper sodales. Ut nec dolor sed quam convallis bibendum. Sed lorem leo, rhoncus vitae massa malesuada, imperdiet scelerisque ligula. Integer risus diam, tincidunt quis facilisis ac, commodo sed purus. Etiam cursus tellus condimentum enim ornare pulvinar. Quisque lobortis lobortis justo, sed molestie ligula viverra sit amet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vel lobortis arcu, id vehicula risus. Pellentesque id ipsum gravida, posuere felis sit amet, sollicitudin purus.</p>
+    <p>Mauris volutpat, ex sit amet porttitor vehicula, tortor magna luctus arcu, in sollicitudin nibh ligula id elit. Aenean a vehicula nulla. In sit amet volutpat sem. Nulla blandit purus non tempor mattis. Vestibulum diam enim, venenatis ac libero eget, cursus viverra leo. Donec tempus leo ac rutrum gravida. Vivamus eget laoreet tellus. Mauris quis neque ornare, lobortis nunc ultricies, accumsan magna. Proin non arcu ut magna viverra pellentesque. </p>
+  </div-->
+</body>
+<footer>
+  <section class="foot-menu">
+    <div class="foot-img">
+      <img id="pixelArt" src="../Images/PixelArts/Animated (2).gif" onmouseenter="LoadRandom_PixelArt()"/>
+    </div>
+  </section>
+</footer>
+</html>
